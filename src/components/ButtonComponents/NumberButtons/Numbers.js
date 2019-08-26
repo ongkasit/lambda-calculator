@@ -7,15 +7,18 @@ import NumberButton from "./NumberButton.js";
 import { numbers } from "../../../data.js";
 
 
-const Numbers = () => {
+const Numbers = (props) => {
   // STEP 2 - add the imported data to state
   const [buttonNumbers, setButtonNumbers] = useState(numbers);
+  console.log("Numbers", props);
   return (
-    <div>
+    <div className="numbers" >
       {/* STEP 3 - Use .map() to iterate over your array data and return a button
        component matching the name on the provided file. Pass
        it any props needed by the child component*/}
-       {buttonNumbers.map (number => <NumberButton key={number} text={number}/>)}
+       {buttonNumbers.map (number => <NumberButton key={number} 
+                                                  text={number} 
+                                                  addNumber={props.addNumber}/>)}
     </div>
   );
 };

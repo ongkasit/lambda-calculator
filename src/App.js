@@ -7,6 +7,7 @@ import "./App.css";
 import Logo from "./components/DisplayComponents/Logo";
 import Display from "./components/DisplayComponents/Display.js";
 import Numbers from "./components/ButtonComponents/NumberButtons/Numbers.js";
+import Operators from "./components/ButtonComponents/OperatorButtons/Operators.js";
 
 function App() {
   // STEP 5 - After you get the components displaying using the provided data file, write your state hooks here.
@@ -22,6 +23,7 @@ function App() {
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
         <Display number={0} /> 
         <Numbers /> 
+        <Operators />
       </div>
     </div>
   );

@@ -1,0 +1,66 @@
+.container {
+    background-color: #8b0000; 
+    width: 20%;
+    height: auto;
+    padding: 20px;
+}
+
+.display {
+    display: flex;
+    height: 50px;
+    border-radius: 25px;
+    background-color: darkgrey;
+    color: white;
+    margin-bottom: 6px;
+    padding: 0 5px;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.button-container {
+    display: flex;
+}
+
+button {
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin: 3px;
+    justify-content: center;
+    
+}
+
+.logo {
+    height: 25px;
+    padding-bottom: 10px;
+}
+
+.numbers button{
+    color: white;
+    background-color: #003366;
+    font-size: 16px;
+}
+
+.calculator{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.specials button {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.operators {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.operators button {
+    color: white;
+    background-color: steelblue; 
+
+}
+
